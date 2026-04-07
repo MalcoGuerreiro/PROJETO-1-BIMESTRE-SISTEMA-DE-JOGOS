@@ -1,14 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h> 
 
-int qualquermerda(){
-	
-	printf("fodase");
-	return 0;
-}
-
-
-
 int main()
 {
 	int opcao;
@@ -34,23 +26,37 @@ int main()
 	scanf("%d", &opcao);
 	system("cls");
 	
-	
-	if(opcao == 1)
-	{
-		printf("<><><><><><><><><><><><><><><><><><><>");
-		printf("\n<       RERGUNTAS E PERGOSTAS        >\n");
-		printf("<><><><><><><><><><><><><><><><><><><>\n\n");
-		printf("1. Jogar!\n");
-		printf("2. Como Funciona?\n");
-		printf("3. Sair\n");	
+	switch(opcao){
 		
-	
+		case 1:
+		menurep();
+		break;
 	}
-	
-	
-	
-	
-	
 	
 	return 0;
 }
+
+int menurep(){
+	
+	int opcaorep;
+	
+	printf("<><><><><><><><><><><><><><><><><><><>");
+	printf("\n<       RERGUNTAS E PERGOSTAS        >\n");
+	printf("<><><><><><><><><><><><><><><><><><><>\n\n");
+	printf("1. Jogar!\n");
+	printf("2. Como Funciona?\n");
+	printf("3. Sair\n");
+	printf("\nEscolha sua acao: ");
+	
+	scanf("%d", &opcaorep);
+}
+
+
+
+
+
+
+
+
+
+
