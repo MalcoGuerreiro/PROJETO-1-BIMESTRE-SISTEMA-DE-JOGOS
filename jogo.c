@@ -31,6 +31,14 @@ int main()
 		case 1:
 		menurep();
 		break;
+	
+		case 2:
+		menucnb();
+		break;			
+		
+		case 3:
+		menuw();
+		break;	
 	}
 	
 	return 0;
@@ -49,11 +57,32 @@ int menurep(){
 	printf("\nEscolha sua acao: ");
 	
 	scanf("%d", &opcaorep);
+
+	switch(opcaorep){
+		
+		
+		
+		
+		
+		
+		
+		
+		case 3:
+			main();
+			break;
+	}
 }
 
+int menucnb(){
+	
+	printf("test");
+	
+	
+}
 
-
-
+int menuw(){
+	printf("teste 2");
+}
 
 
 
