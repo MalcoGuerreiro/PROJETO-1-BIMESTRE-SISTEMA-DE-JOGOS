@@ -39,12 +39,18 @@ int main()
 		case 3:
 		menuw();
 		break;	
+	
+		case 4:
+		menus();
+		break;
 	}
 	
 	return 0;
 }
 
 int menurep(){
+	
+	//menu jogo 1
 	
 	int opcaorep;
 	
@@ -53,36 +59,167 @@ int menurep(){
 	printf("<><><><><><><><><><><><><><><><><><><>\n\n");
 	printf("1. Jogar!\n");
 	printf("2. Como Funciona?\n");
-	printf("3. Sair\n");
+	printf("3. Historia\n");
+	printf("4. Sair (Voltar para o menu principal)\n");
 	printf("\nEscolha sua acao: ");
 	
 	scanf("%d", &opcaorep);
 
 	switch(opcaorep){
 		
+		case 1:
+		system("cls");
+		jogorep();
+		break;	
 		
 		
 		
-		
-		
-		
-		
-		case 3:
-			main();
-			break;
+		case 4:
+		main();
+		break;
 	}
 }
 
 int menucnb(){
 	
-	printf("test");
+	//menu jogo 2 (tucnmb)
+	
+	int opcaocnb;
+	
+	printf("<><><><><><><><><><><><><><><><><><><>");
+	printf("\n<    TEM UMA COBRA NA MINHA BOTA     >\n");
+	printf("<><><><><><><><><><><><><><><><><><><>\n\n");
+	printf("1. Jogar!\n");
+	printf("2. Como Funciona?\n");
+	printf("3. Historia\n");
+	printf("4. Sair (Voltar para o menu principal)\n");
+	printf("\nEscolha sua acao: ");
+	
+	scanf("%d", &opcaocnb);
+	
+	switch(opcaocnb){
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		case 4:
+		main();
+		break;
+	}
+	
+	
+
+}
+
+int menuw(){
+	
+	//menu jogo 3
+	
+	int opcaow;
+	
+		int opcaocnb;
+	
+	printf("<><><><><><><><><><><><><><><><><><><>");
+	printf("\n<   OS CAMPEOES ENTRAM EM GUERRA!    >\n");
+	printf("<><><><><><><><><><><><><><><><><><><>\n\n");
+	printf("1. Jogar!\n");
+	printf("2. Como Funciona?\n");
+	printf("3. Historia\n");
+	printf("4. Sair (Voltar para o menu principal)\n");
+	printf("\nEscolha sua acao: ");
+	
+	scanf("%d", &opcaow);
+	
+	switch(opcaow){
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		case 4:
+		main();
+		break;
+	}
+}
+
+int menus(){
+	
+	//menu de saida
+	
+	printf("voce realmente deseja sair?  (s/n)");
+}
+
+int jogorep(){
+	
+	printf("teste");
+	
+	
 	
 	
 }
 
-int menuw(){
-	printf("teste 2");
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
