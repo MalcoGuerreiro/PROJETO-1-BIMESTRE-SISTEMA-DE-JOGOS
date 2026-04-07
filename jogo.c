@@ -4,13 +4,6 @@
 int main()
 {
 	int opcao;
-	char ENTER;
-	
-	// Menu de start
-	
-	printf("Bem vindo!!! Voce esta jogando MALIMX.\n\n Pressione ENTER para ingressar o menu...\n\n");
-	scanf("%c", &ENTER);
-	system("cls");
 	
 	// Menu de escolha do jogo
 	
@@ -41,8 +34,21 @@ int main()
 		break;	
 	
 		case 4:
-		menus();
+		printf("\nSAINDO...\n\n");
 		break;
+	
+		default:
+		printf("\nOPCAO INVALIDA... Por favor escolha uma das opcoes entre 1-4\n");	
+		printf("\nPressione ENTER para voltar ao menu principal...\n");
+		getchar();
+		getchar();
+		system("cls");
+		main();
+		break;
+	
+	
+	
+	
 	}
 	
 	return 0;
@@ -75,6 +81,7 @@ int menurep(){
 		
 		
 		case 4:
+		system("cls");
 		main();
 		break;
 	}
@@ -159,14 +166,7 @@ int menuw(){
 	}
 }
 
-int menus(){
-	
-	//menu de saida
-	
-	printf("voce realmente deseja sair?  (s/n)");
-}
-
-int jogorep(){
+void jogorep(){
 	
 	printf("teste");
 	
@@ -174,7 +174,6 @@ int jogorep(){
 	
 	
 }
-
 
 
 
