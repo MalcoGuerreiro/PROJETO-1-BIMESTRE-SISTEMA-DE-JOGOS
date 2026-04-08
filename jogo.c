@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h> 
+#include <time.h>
 
 int main()
 {
@@ -78,12 +79,37 @@ int menurep(){
 		jogorep();
 		break;	
 		
+		case 2:
+		system("cls");
+		printf("COMO FUNCIONA:\n\n");
+		printf("-Voce ira se deparar com um sequencia de 5 perguntas\n-Cada uma delas tera 4 alternativas\n-O objetivo eh acertar o maximo de questoes possivel.\n\n");
+		printf("Pressione ENTER para retornar ao menu do jogo...");
+		getchar();
+		getchar();
+		system("cls");
+		menurep();
+		break;
 		
-		
+		case 3:
+		system("cls");
+		printf("HISTORIA:\n");	
+		printf("\nAs portas se abrem para o Hall do Quiz, um vazio cheio de luz neon.\n");
+    	printf("Caine flutua com cartoezinhos: \"Bem-vindos ao show! Nao fiquem parados!\"\n");
+    	printf("\"Primeira pergunta: voces ainda lembram quem eram la fora?\"\n");
+    	printf("O silencio ecoa e os cartoes brilham agressivamente.\n");
+    	printf("\"Tempo esgotado!\" Caine ri. \"Nao importa, o jogo so esta comecando!\"\n");
+		printf("\nPressione ENTER para retornar ao menu do jogo...");
+		getchar();
+		getchar();
+		system("cls");
+		menurep();
+		break;	
+			
 		case 4:
 		system("cls");
 		main();
 		break;
+	
 	}
 }
 
@@ -106,21 +132,45 @@ int menucnb(){
 	
 	switch(opcaocnb){
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+		case 1:
+		system("cls");
+		jogocnb();	
+		break;
+			
+		case 2:
+		system("cls");
+		printf("COMO FUNCIONA:\n\n");	
+		printf("- Cada jogador escolhe um nome de uma lista de 7 opcoes disponiveis.\n");
+		printf("- O sistema sorteia quem inicia e define as posicoes distintas do botao e da cobra.\n");
+		printf("- Jogadores alternam turnos escolhendo caixas fechadas de 1 a 5.\n");
+		printf("- Botao: vitoria imediata / Cobra: derrota imediata / Vazia: troca de turno.\n");
+		printf("- Escolha de caixa ja aberta eh bloqueada, exigindo uma nova tentativa do jogador.\n");	
+		printf("\nPressione ENTER para retornar ao menu do jogo...");
+		getchar();
+		getchar();
+		system("cls");
+		menucnb();
+		break;
+
+		case 3:
+		system("cls");
+		printf("HISTORIA:\n");
+		printf("\nO sol castiga o deserto e Andy deixou suas botas espalhadas pelo quarto.\n");
+		printf("Woody e o bando estao em alerta porque um bicho peconhento se escondeu.\n");
+		printf("Voce precisa encontrar o botao premiado antes de colocar o pe no perigo.\n");
+		printf("Mas cuidado parceiro: se o Woody gritar que tem uma cobra na bota, ja era!\n");
+		printf("E hora de testar sua sorte e ver quem e o xerife mais rapido do Oeste.\n");	
+		printf("\nPressione ENTER para retornar ao menu do jogo...");
+		getchar();
+		getchar();
+		system("cls");
+		menucnb();    	   	
 		
 		case 4:
+		system("cls");
 		main();
 		break;
+	
 	}
 	
 	
@@ -132,8 +182,7 @@ int menuw(){
 	//menu jogo 3
 	
 	int opcaow;
-	
-		int opcaocnb;
+	int opcaocnb;
 	
 	printf("<><><><><><><><><><><><><><><><><><><>");
 	printf("\n<   OS CAMPEOES ENTRAM EM GUERRA!    >\n");
@@ -161,6 +210,7 @@ int menuw(){
 		
 		
 		case 4:
+		system("cls");
 		main();
 		break;
 	}
@@ -175,7 +225,15 @@ void jogorep(){
 	
 }
 
-
+void jogocnb(){
+	
+	printf("teste");
+	
+	
+	
+	
+	
+}
 
 
 
