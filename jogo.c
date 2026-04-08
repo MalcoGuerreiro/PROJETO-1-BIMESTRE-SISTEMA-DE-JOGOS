@@ -200,14 +200,39 @@ int menuw(){
 		
 		
 		
+		case 2:
+		system("cls");
+		printf("COMO FUNCIONA:\n\n");
+		printf("- OBJETIVO: Destruir os 2 campeoes do adversario.\n");
+		printf("- FURIA: Se a furia de um campeao passar de 5, ele eh destruido.\n");
+		printf("- ATAQUE: Soma a furia do seu campeao a furia do campeao inimigo.\n");
+		printf("- DIVIDIR: Transfere furia entre seus campeoes para equilibrar a batalha.\n");
+		printf("   . Regra: So pode dividir se a furia do doador for PAR.\n");
+		printf("   . Regra: A furia do doador nao pode zerar e o alvo nao deve exceder 5.\n");
+		printf("5. TURNOS: Apenas 1 acao por turno. O jogo termina se um dos dois jogadores ficar sem campeoes.\n");
+		printf("\nPressione ENTER para retornar ao menu do jogo...");
+		getchar();
+		getchar();
+		system("cls");
+		menuw();
+		break;
 		
-		
-		
-		
-		
-		
-		
-		
+		case 3:
+		system("cls");
+		printf("HISTORIA:\n\n");	
+		printf("O lodo da Calamidade corrompeu as Reliquias Divinas!\n");
+		printf("Revali, Daruk, Mipha e Urbosa perderam o controle de\n");
+		printf("suas furias elementares e iniciaram um duelo mortal.\n");
+		printf("Como generais de Hyrule, voces devem dominar essa\n");
+		printf("energia instavel. Se a furia de um Campeao transbordar,\n");
+		printf("ele sera consumido pelo poder que jurou proteger.\n");
+		printf("Equilibre sua forca ou destrua seus antigos aliados!\n");
+		printf("\nPressione ENTER para retornar ao menu do jogo...");
+		getchar();
+		getchar();
+		system("cls");
+		menurep();
+		break;	
 		
 		case 4:
 		system("cls");
