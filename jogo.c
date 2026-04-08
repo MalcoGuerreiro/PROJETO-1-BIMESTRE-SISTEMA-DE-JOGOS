@@ -197,7 +197,10 @@ int menuw(){
 	
 	switch(opcaow){
 		
-		
+		case 1:
+		system("cls");
+		jogow();	
+		break;
 		
 		
 		case 2:
@@ -261,7 +264,18 @@ void jogocnb(){
 }
 
 
-
+void jogow(){
+	
+	printf("teste w");
+	
+	
+	
+	
+	
+	
+	
+	
+}
 
 
 
