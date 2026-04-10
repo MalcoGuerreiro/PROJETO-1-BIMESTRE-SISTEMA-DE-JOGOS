@@ -245,15 +245,198 @@ int menuw(){
 }
 
 void jogorep(){
+		
+// uso de I.A na ASCII ART													 |
+    printf("   ¦¦¦¦¦¦+  ¦¦+ ¦¦¦¦¦¦+  ¦¦+¦ ¦¦¦¦¦¦¦+ ¦¦¦¦¦+  ¦¦+     \n");
+    printf("   ¦¦+--¦¦+ ¦¦¦ ¦¦+----+  ¦¦¦ +--¦¦+--+¦¦+--¦¦ +¦¦¦     \n");
+    printf("   ¦¦¦  ¦¦¦ ¦¦¦ ¦¦¦  ¦¦¦ +¦¦¦    ¦¦¦   ¦¦¦¦¦¦¦ ¦¦¦¦     \n");
+    printf("   ¦¦¦  ¦¦¦ ¦¦¦ ¦¦¦   ¦¦ ¦¦¦¦    ¦¦¦   ¦¦+--¦¦ ¦¦¦¦     \n");
+    printf("   ¦¦¦¦¦¦++ ¦¦¦ +¦¦¦¦¦¦+ +¦¦¦    ¦¦¦   ¦¦¦  ¦¦ ¦¦¦¦¦¦¦¦+\n");
+    printf("   +-----+  +-+ +-----+  +-+    +-+   +-+  +-+ +------+\n\n");
+
+    printf("   ¦¦¦¦¦¦+ ¦¦+ ¦¦¦¦¦¦+  ¦¦¦¦¦¦+ ¦¦+   ¦¦+¦ ¦¦¦¦¦¦+\n");
+    printf("  ¦¦+----+ ¦¦¦ ¦¦+--¦¦ +¦¦+----+ ¦¦¦   ¦¦¦ ¦¦+----+\n");
+    printf("  ¦¦¦      ¦¦¦ ¦¦¦¦¦¦+ +¦¦¦      ¦¦¦   ¦¦¦ ¦¦¦¦¦¦¦+\n");
+    printf("  ¦¦¦      ¦¦¦ ¦¦+--¦¦ +¦¦¦      ¦¦¦   ¦¦¦ +----¦¦¦\n");
+    printf("  +¦¦¦¦¦¦+ ¦¦¦ ¦¦¦  ¦¦¦ +¦¦¦¦¦¦+ +¦¦¦¦¦¦+ +¦¦¦¦¦¦¦¦\n");
+    printf("   +-----+ +-+ +-+  +-+ +-----+  +-----+  +------+\n\n");
+
+
+    printf("      .-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-.\n");
+    printf("      |   BEM VINDO AO SHOW!!!    |\n");
+    printf("      '-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-'\n\n");
+//                                                                          |
+	system("pause");
 	
-	//jogo 1
+	printf("aperte ENTER para iniciar o quiz...");
+	getchar();
+	system("cls");
 	
-	printf("teste");
+	char n, s, opcao1, opcao2, opcao3, opcao4, opcao5;
+	int SEC = 0;
+	
+	printf("PERGUNTA NÚMERO 1: qual é o nome da empresa por tras do experimento do digital circus?\n\n");
+	printf("A) C&A\n");
+	printf("B) Monsters, INC.\n");
+	printf("C) UFPA\n");
+	printf("D) cESUPA\n");
+	
+	printf("\n\nescolha a opção correta ----->");
+	scanf(" %c", &opcao1);
+	
+	switch(opcao1)
+	{
+	case 'a':
+		printf(" \nresposta certa!\n\n\n");
+		break;
+	case 'd':
+		SEC += 1;
+		printf("\nresposta errada!!!      --> A era a certa\n\n\n");
+		break; 
+	default:
+		printf("\nresposta errada!!!      --> A era a certa\n\n\n");
+		break;
+	}
+	printf("carregando a próxima pergunta...");
+	Sleep(5000);
+	system("cls");
+	
+	printf("PERGUNTA NÚMERO 2: quais desses personagens abstrairam?\n\n");
+	printf("A) pomni\n");
+	printf("B) ribbit\n");
+	printf("C) kinger\n");
+	printf("D) Jax\n");
+	
+	printf("\n\nescolha a opção correta ----->");
+	scanf(" %c", &opcao2);
+	
+	switch(opcao2)
+	{
+	case 'b':
+		printf(" \nresposta certa!\n\n\n");
+		break;
+	case 'd':
+		SEC += 1;
+		printf("\nresposta errada!!!      --> B era a certa\n\n\n");
+		break; 
+	default:
+		printf("\nresposta errada!!!      --> B era a certa\n\n\n");
+		break;
+	}
+	printf("só um segundinho...");
+	Sleep(5000);
+	system("cls");	
+	
+	printf("PERGUNTA NÚMERO 3: quem tem o controle sobre o circo?\n\n");
+	printf("A) caine\n");
+	printf("B) Malco\n");
+	printf("C) bolha\n");
+	printf("D) scratch\n");
+	
+	printf("\n\nescolha a opção correta ----->");
+	scanf(" %c", &opcao3);
+	
+	switch(opcao3)
+	{
+	case 'a':
+		printf(" \nresposta certa!\n\n\n");
+		break;
+	case 'b':
+		SEC += 1;
+		printf("\nresposta errada!!!      --> A era a certa\n\n\n");
+		break; 
+	default:
+		printf("\nresposta errada!!!      --> A era a certa\n\n\n");
+		break;
+	}
+	printf("carregando próxima...");
+	Sleep(5000);
+	system("cls");
+	
+	printf("PERGUNTA NÚMERO 4: quem é o personagem mais sabichão?\n\n");
+	printf("A) Scratch\n");
+	printf("B) gangle\n");
+	printf("C) pomni\n");
+	printf("D) kinger\n");
+	
+	printf("\n\nescolha a opção correta ----->");
+	scanf(" %c", &opcao4);
+	
+	switch(opcao4)
+	{
+	case 'd':
+		printf(" \nresposta certa!\n\n\n");
+		break;
+	case 'a':
+		SEC += 1;
+		printf("\nresposta errada!!!      --> D era a certa\n\n\n");
+		break; 
+	default:
+		printf("\nresposta errada!!!      --> D era a certa\n\n\n");
+		break;
+	}
+	printf("quase lá...");
+	Sleep(5000);
+	system("cls");
+	
+	printf("PERGUNTA NÚMERO 5: qual desses é o personagem mais antigo\n\n");
+	printf("A) kinger\n");
+	printf("B) glep\n");
+	printf("C) kaufmo\n");
+	printf("D) caine\n");
+	printf("E) ?????\n");
+	
+	printf("\n\nescolha a opção correta ----->");
+	scanf(" %c", &opcao5);
+	
+	switch(opcao5)
+	{
+	case 'b':
+		printf(" \nresposta certa!\n\n\n");
+		break;
+	case 'e':
+		SEC += 1;
+		printf("\nresposta errada!!!      --> B era a certa\n\n\n");
+		break; 
+	default:
+		printf("\nresposta errada!!!      --> B era a certa\n\n\n");
+		break;
+	}
+		printf("..........\n");
+		if(SEC == 5){Sleep(10000);
+		printf("CADÊ O KINGER!?\n\n\n");
+// uso de I.A na ASCII ART		
+	printf("              .-.\n");
+    printf("             /   \\\n");
+    printf("            | RIP |\n");
+    printf("            |     |\n");
+    printf("          __|_____|__\n");
+    printf("        /             \\\n");
+    printf("       /_______________\\\n");
+    printf("\n");
+
+    printf("        .-.\t     .-.\n");
+    printf("       /   \\\t   /   \\\n");
+    printf("      | RIP |\t  | RIP |\n");
+    printf("      |     |\t  |     |\n");
+    printf("    __|_____|__ __|_____|__\n");
+    printf("  /             V           \\\n");
+    printf(" /___________________________\\\n");
+	}
+	else
+	{
+	printf("carregando...");
+	Sleep(5000);
+	system("cls");
+	}
+
+	
+
+	
+
 	
 	
-	
-	
-}
+	}
 
 void jogocnb(){
 	
