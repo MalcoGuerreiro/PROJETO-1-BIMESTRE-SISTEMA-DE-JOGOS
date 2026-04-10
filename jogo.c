@@ -246,6 +246,8 @@ int menuw(){
 
 void jogorep(){
 	
+	//jogo 1
+	
 	printf("teste");
 	
 	
@@ -255,6 +257,8 @@ void jogorep(){
 
 void jogocnb(){
 	
+	//jogo 2
+	
 	printf("teste");
 	
 	
@@ -264,9 +268,21 @@ void jogocnb(){
 }
 
 
+
 void jogow(){
+
+	// jogo 3
+		
+	printf("A Guerra comeca AGORA!\n\n");
+	printf("========================================\n");
+	printf("     DARUK        //      URBOSA       \n");
+	printf("========================================\n\n");
+	printf("                  VS                    \n\n");
+	printf("========================================\n");
+	printf("     REVALI      //       MIPHA       \n");
+	printf("========================================\n\n");
 	
-	printf("teste w");
+	
 	
 	
 	
