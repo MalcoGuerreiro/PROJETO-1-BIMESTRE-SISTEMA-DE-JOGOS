@@ -1,10 +1,16 @@
 #include <stdio.h>
 #include <stdlib.h> 
 #include <time.h>
+#include <conio.h>
+#include <locale.h>
+#include <windows.h>
 
 int main()
 {
+setlocale(LC_ALL,"portuguese");	
+	
 	int opcao;
+	
 	
 	// Menu de escolha do jogo
 	
