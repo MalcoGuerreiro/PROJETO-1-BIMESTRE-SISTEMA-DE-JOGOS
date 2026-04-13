@@ -11,8 +11,7 @@ setlocale(LC_ALL,"portuguese");
 	
 	int opcao;
 	
-	
-	// Menu de escolha do jogo
+	while(1){
 	
 	printf("=========================\n");
 	printf("|        MaLiMx         |\n");
@@ -22,7 +21,7 @@ setlocale(LC_ALL,"portuguese");
 	printf("2. Tem uma cobra na minha bota\n");
 	printf("3. Os campeoes entram em GUERRA\n");
 	printf("4. Sair\n\n");
-	printf("Escolha seu jogo: ");
+	printf("Escolha sua opcao: ");
 	scanf("%d", &opcao);
 	system("cls");
 	
@@ -41,24 +40,23 @@ setlocale(LC_ALL,"portuguese");
 		break;	
 	
 		case 4:
-		printf("\nSAINDO...\n\n");
-		break;
+		printf("SAINDO...\n");
+		return 0;
 	
 		default:
-		printf("\nOPCAO INVALIDA... Por favor escolha uma das opcoes entre 1-4\n");	
-		printf("\nPressione ENTER para voltar ao menu principal...\n");
-		getchar();
-		getchar();
-		system("cls");
-		main();
-		break;
-	
-	
-	
-	
+    	system("cls");
+    	printf("Opcao invalida! Por favor escolha uma opcao entre 1 - 4.\n\n");
+    	printf("Pressione ENTER para retornar ao menu do jogo...");
+    	while (getchar() != '\n');
+    	getchar();                
+    	system("cls");
+    	break;	
 	}
-	
+
+	}
+		
 	return 0;
+
 }
 
 int menurep(){
@@ -66,6 +64,10 @@ int menurep(){
 	//menu jogo 1
 	
 	int opcaorep;
+	
+	while(1){
+	
+	system("cls");
 	
 	printf("<><><><><><><><><><><><><><><><><><><>");
 	printf("\n<       RERGUNTAS E PERGOSTAS        >\n");
@@ -116,7 +118,16 @@ int menurep(){
 		main();
 		break;
 	
+	   	default:
+    	system("cls");
+    	printf("Opcao invalida! Por favor escolha uma opcao entre 1 - 4.\n\n");
+    	printf("Pressione ENTER para retornar ao menu do jogo...");
+    	while (getchar() != '\n');
+    	getchar();                
+    	system("cls");
+    	break;	
 	}
+}
 }
 
 int menucnb(){
@@ -125,6 +136,10 @@ int menucnb(){
 	
 	int opcaocnb;
 	
+	while(1) {
+	
+	system("cls");
+		
 	printf("<><><><><><><><><><><><><><><><><><><>");
 	printf("\n<    TEM UMA COBRA NA MINHA BOTA     >\n");
 	printf("<><><><><><><><><><><><><><><><><><><>\n\n");
@@ -177,9 +192,17 @@ int menucnb(){
 		main();
 		break;
 	
+		default:
+    	system("cls");
+    	printf("Opcao invalida! Por favor escolha uma opcao entre 1 - 4.\n\n");
+    	printf("Pressione ENTER para retornar ao menu do jogo...");
+    	while (getchar() != '\n');
+    	getchar();                
+    	system("cls");
+    	break;   	
 	}
 	
-	
+}
 
 }
 
@@ -188,8 +211,8 @@ int menuw(){
 	//menu jogo 3
 	
 	int opcaow;
-	int opcaocnb;
 	
+	while (1) {
 	printf("<><><><><><><><><><><><><><><><><><><>");
 	printf("\n<   OS CAMPEOES ENTRAM EM GUERRA!    >\n");
 	printf("<><><><><><><><><><><><><><><><><><><>\n\n");
@@ -247,6 +270,17 @@ int menuw(){
 		system("cls");
 		main();
 		break;
+		
+		default:
+    	system("cls");
+		printf("Opcao invalida!\n\n");
+    	printf("Pressione ENTER para retornar ao menu do jogo...");
+    	while (getchar() != '\n');
+    	getchar();                 
+    	system("cls");
+    	break;
+
+	}
 	}
 }
 
@@ -269,7 +303,7 @@ void jogorep(){
 
 
     printf("      .-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-.\n");
-    printf("      |   BEM VINDO AO SHOW!!!    |\n");
+    printf("      |      BEM VINDO AO SHOW!!!     |\n");
     printf("      '-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-'\n\n");
 //                                                                          |
 	system("pause");
@@ -278,87 +312,135 @@ void jogorep(){
 	getchar();
 	system("cls");
 	
-	char n, s, opcao1, opcao2, opcao3, opcao4, opcao5;
-	int SEC = 0;
+	char SN, opcao1, opcao2, opcao3, opcao4, opcao5;
+	int SEC = 0, ACE = 0;
 	
+	do{
+		system("cls");
 	printf("PERGUNTA NÚMERO 1: qual é o nome da empresa por tras do experimento do digital circus?\n\n");
 	printf("A) C&A\n");
 	printf("B) Monsters, INC.\n");
 	printf("C) UFPA\n");
 	printf("D) cESUPA\n");
-	
 	printf("\n\nescolha a opção correta ----->");
 	scanf(" %c", &opcao1);
 	
+	
 	switch(opcao1)
-	{
+		{
 	case 'a':
+	case 'A':	
+		ACE += 1;
 		printf(" \nresposta certa!\n\n\n");
 		break;
-	case 'd':
-		SEC += 1;
-		printf("\nresposta errada!!!      --> A era a certa\n\n\n");
-		break; 
-	default:
-		printf("\nresposta errada!!!      --> A era a certa\n\n\n");
+	case 'b':
+	case 'B':	
+		printf("\nresposta errada!!!-------->  A era a certa\n\n\n");
 		break;
-	}
+	case 'c':
+	case 'C':	
+		printf("\nresposta errada!!!-------->  A era a certa\n\n\n");
+		break;
+	case 'd':
+	case 'D':	
+		SEC += 1;
+		printf("\nresposta errada!!!-------->  A era a certa\n\n\n");
+		break; 
+		}
+	}while(opcao1 != 'a' && opcao1 != 'A' &&
+  	  	  opcao1 != 'b' && opcao1 != 'B' &&
+          opcao1 != 'c' && opcao1 != 'C' &&
+	      opcao1 != 'd' && opcao1 != 'D');
+	      
 	printf("carregando a próxima pergunta...");
-	Sleep(5000);
+	Sleep(2000);
 	system("cls");
-	
+
+
+	do{
+		system("cls");
 	printf("PERGUNTA NÚMERO 2: quais desses personagens abstrairam?\n\n");
 	printf("A) pomni\n");
 	printf("B) ribbit\n");
 	printf("C) kinger\n");
 	printf("D) Jax\n");
-	
 	printf("\n\nescolha a opção correta ----->");
 	scanf(" %c", &opcao2);
 	
+	
 	switch(opcao2)
-	{
+		{
 	case 'b':
+	case 'B':
+		ACE += 1;
 		printf(" \nresposta certa!\n\n\n");
 		break;
-	case 'd':
-		SEC += 1;
-		printf("\nresposta errada!!!      --> B era a certa\n\n\n");
-		break; 
-	default:
-		printf("\nresposta errada!!!      --> B era a certa\n\n\n");
+	case 'a':
+	case 'A':	
+		printf("\nresposta errada!!!-------->  B era a certa\n\n\n");
 		break;
-	}
-	printf("só um segundinho...");
-	Sleep(5000);
-	system("cls");	
+	case 'c':
+	case 'C':	
+		printf("\nresposta errada!!!-------->  B era a certa\n\n\n");
+		break;
+	case 'd':
+	case 'D':	
+		SEC += 1;
+		printf("\nresposta errada!!!-------->  B era a certa\n\n\n");
+		break; 
+		}
+	}while(opcao2 != 'a' && opcao2 != 'A' &&
+  	  	   opcao2 != 'b' && opcao2 != 'B' &&
+           opcao2 != 'c' && opcao2 != 'C' &&
+	       opcao2 != 'd' && opcao2 != 'D');
+	      
+	printf("carregando a próxima pergunta...");
+	Sleep(2000);
+	system("cls");
 	
+	do{
+		system("cls");
 	printf("PERGUNTA NÚMERO 3: quem tem o controle sobre o circo?\n\n");
 	printf("A) caine\n");
 	printf("B) Malco\n");
 	printf("C) bolha\n");
-	printf("D) scratch\n");
-	
+	printf("D) scratch\n");	
 	printf("\n\nescolha a opção correta ----->");
 	scanf(" %c", &opcao3);
 	
+	
 	switch(opcao3)
-	{
+		{
 	case 'a':
+	case 'A':
+		ACE += 1;	
 		printf(" \nresposta certa!\n\n\n");
 		break;
 	case 'b':
-		SEC += 1;
-		printf("\nresposta errada!!!      --> A era a certa\n\n\n");
-		break; 
-	default:
-		printf("\nresposta errada!!!      --> A era a certa\n\n\n");
+	case 'B':
+		SEC += 1;	
+		printf("\nresposta errada!!!-------->  A era a certa\n\n\n");
 		break;
-	}
-	printf("carregando próxima...");
-	Sleep(5000);
+	case 'c':
+	case 'C':	
+		printf("\nresposta errada!!!-------->  A era a certa\n\n\n");
+		break;
+	case 'd':
+	case 'D':	
+		printf("\nresposta errada!!!-------->  A era a certa\n\n\n");
+		break; 
+		}
+	}while(opcao3 != 'a' && opcao3 != 'A' &&
+  	  	   opcao3 != 'b' && opcao3 != 'B' &&
+           opcao3 != 'c' && opcao3 != 'C' &&
+	       opcao3 != 'd' && opcao3 != 'D');
+	      
+	printf("carregando a próxima pergunta...");
+	Sleep(2000);
 	system("cls");
 	
+	do{
+		system("cls");
 	printf("PERGUNTA NÚMERO 4: quem é o personagem mais sabichão?\n\n");
 	printf("A) Scratch\n");
 	printf("B) gangle\n");
@@ -368,80 +450,116 @@ void jogorep(){
 	printf("\n\nescolha a opção correta ----->");
 	scanf(" %c", &opcao4);
 	
+	
 	switch(opcao4)
-	{
+		{
 	case 'd':
+	case 'D':
+		ACE += 1;	
 		printf(" \nresposta certa!\n\n\n");
 		break;
-	case 'a':
-		SEC += 1;
-		printf("\nresposta errada!!!      --> D era a certa\n\n\n");
-		break; 
-	default:
-		printf("\nresposta errada!!!      --> D era a certa\n\n\n");
+	case 'b':
+	case 'B':	
+		printf("\nresposta errada!!!-------->  D era a certa\n\n\n");
 		break;
-	}
-	printf("quase lá...");
-	Sleep(5000);
+	case 'c':
+	case 'C':	
+		printf("\nresposta errada!!!-------->  D era a certa\n\n\n");
+		break;
+	case 'a':
+	case 'A':	
+		SEC += 1;
+		printf("\nresposta errada!!!-------->  D era a certa\n\n\n");
+		break; 
+		}
+	}while(opcao4 != 'a' && opcao4 != 'A' &&
+  	  	   opcao4 != 'b' && opcao4 != 'B' &&
+           opcao4 != 'c' && opcao4 != 'C' &&
+	       opcao4 != 'd' && opcao4 != 'D');
+	      
+	printf("carregando a próxima pergunta...");
+	Sleep(2000);
 	system("cls");
 	
+	do{
+		system("cls");
 	printf("PERGUNTA NÚMERO 5: qual desses é o personagem mais antigo\n\n");
 	printf("A) kinger\n");
 	printf("B) glep\n");
 	printf("C) kaufmo\n");
 	printf("D) caine\n");
-	printf("E) ?????\n");
-	
+	printf("E) ?????\n");	
 	printf("\n\nescolha a opção correta ----->");
 	scanf(" %c", &opcao5);
 	
+	
 	switch(opcao5)
-	{
+		{
 	case 'b':
+	case 'B':
+		ACE += 1;	
 		printf(" \nresposta certa!\n\n\n");
 		break;
-	case 'e':
-		SEC += 1;
-		printf("\nresposta errada!!!      --> B era a certa\n\n\n");
-		break; 
-	default:
-		printf("\nresposta errada!!!      --> B era a certa\n\n\n");
+	case 'a':
+	case 'A':	
+		printf("\nresposta errada!!!-------->  B era a certa\n\n\n");
 		break;
-	}
-		printf("..........\n");
+	case 'c':
+	case 'C':	
+		printf("\nresposta errada!!!-------->  B era a certa\n\n\n");
+		break;
+	case 'd':
+	case 'D':	
+		printf("\nresposta errada!!!-------->  B era a certa\n\n\n");
+		break; 
+	case 'e':
+	case 'E':
+		SEC += 1;
+		printf("\nresposta errada!!!--------> B era a certa\n\n\n");	
+		}
+	}while(opcao5 != 'a' && opcao5 != 'A' &&
+  	  	   opcao5 != 'b' && opcao5 != 'B' &&
+           opcao5 != 'c' && opcao5 != 'C' &&
+	       opcao5 != 'd' && opcao5 != 'D' &&
+		   opcao5 != 'e' && opcao5 != 'E');
+    
+			printf("carregando resultado");
+		Sleep(2000);
+		system("cls");
+		
 		if(SEC == 5){Sleep(10000);
+		printf("..........\n");
 		printf("CADÊ O KINGER!?\n\n\n");
+		
 // uso de I.A na ASCII ART		
-	printf("              .-.\n");
-    printf("             /   \\\n");
-    printf("            | RIP |\n");
-    printf("            |     |\n");
-    printf("          __|_____|__\n");
-    printf("        /             \\\n");
-    printf("       /_______________\\\n");
-    printf("\n");
 
-    printf("        .-.\t     .-.\n");
-    printf("       /   \\\t   /   \\\n");
-    printf("      | RIP |\t  | RIP |\n");
-    printf("      |     |\t  |     |\n");
-    printf("    __|_____|__ __|_____|__\n");
-    printf("  /             V           \\\n");
-    printf(" /___________________________\\\n");
+		printf("              .-.\n");
+    	printf("             /   \\\n");
+    	printf("            | RIP |\n");
+    	printf("            |     |\n");
+    	printf("          __|_____|__\n");
+    	printf("        /             \\\n");
+    	printf("       /_______________\\\n");
+    	printf("\n");
+    
+    	printf("\n\nnúmero de acertos: !?!??!?!??!?!?!?\n\n\n");
+	}	else{
+		printf("seus acertos: %d/5\n\n\n", ACE);
 	}
-	else
+	
+	printf("deseja jogar novamente? (S/N)");
+	SN = _getch();
+	switch(SN)
 	{
-	printf("carregando...");
-	Sleep(5000);
+	case 's':
 	system("cls");
-	}
-
-	
-
-	
-
-	
-	
+	jogorep();	
+	break;
+	case 'n':
+	system("cls");
+	main();
+	break;
+}
 	}
 
 void jogocnb(){
@@ -456,32 +574,51 @@ void jogocnb(){
 	
 }
 
-
-
-void jogow(){
-
-	// jogo 3
+// variaveis so pra deixar organizado	
+	
+	int eqp1_c2_furia;
+	int eqp1_c1_furia;
+	int eqp2_c1_furia;
+	int eqp2_c2_furia;
 		
-	printf("A Guerra comeca AGORA!\n\n");
-	printf("========================================\n");
-	printf("     DARUK        //      URBOSA       \n");
-	printf("========================================\n\n");
-	printf("                  VS                    \n\n");
-	printf("========================================\n");
-	printf("     REVALI      //       MIPHA       \n");
-	printf("========================================\n\n");
+	int eqp1_c1_ativo;
+	int eqp1_c2_ativo;
+	int eqp2_c1_ativo;
+	int eqp2_c2_ativo;
 	
+	void jogow() {
 	
+	    int opcao;
 	
+	    while (1) {
 	
+	        system("cls");
 	
+	        printf("+--------------------------------------------+\n");
+	        printf("¦          A GUERRA COMECA AGORA!           ¦\n");
+	        printf("+--------------------------------------------+\n\n");
 	
+	        printf("        ----CAMPEOES EM COMBATE----\n\n");
 	
+	        printf("+-----------------------------------------------+\n");
+	        printf("¦       JOGADOR 1       ¦       JOGADOR 2       ¦\n");
+	        printf("¦-----------------------+-----------------------¦\n");
 	
+	        printf("¦ DARUK (1)             ¦ REVALI (1)            ¦\n");
+	        printf("¦ Furia: %-3d            ¦ Furia: %-3d            ¦\n", eqp1_c1_furia, eqp2_c1_furia);
 	
+	        printf("¦ MIPHA (2)             ¦ URBOSA (2)            ¦\n");
+	        printf("¦ Furia: %-3d            ¦ Furia: %-3d            ¦\n", eqp1_c2_furia, eqp2_c2_furia);
 	
-}
-
+	        printf("+-----------------------------------------------+\n\n");
+	
+	        printf("1 - Atacar\n2 - Dividir\n3 - Sair\n");
+	        printf("Escolha: ");
+	        scanf("%d", &opcao);
+	
+  	
+	    }
+	}
 
 
 
