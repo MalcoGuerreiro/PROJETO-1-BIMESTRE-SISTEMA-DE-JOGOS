@@ -809,7 +809,7 @@ void jogocnb(){
         	
         if (!daruk_ativo && !mipha_ativo) {
             system("cls");
-			printf("\nVITORIA DO JOGADOR 2!!!!!\n");
+			printf("\nVITORIA DO JOGADOR 1!!!!!\n");
             printf("\nPressione ENTER para sair...");
             getchar();
             getchar();
@@ -828,7 +828,7 @@ void jogocnb(){
 
         if (!revali_ativo && !urbosa_ativo) {
             system("cls");
-			printf("\nVITORIA DO JOGADOR 1!!!!!\n");
+			printf("\nVITORIA DO JOGADOR 2!!!!!\n");
             printf("\nPressione ENTER para sair...");
             getchar();
             getchar();
