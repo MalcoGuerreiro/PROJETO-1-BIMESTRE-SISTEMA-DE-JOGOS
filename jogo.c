@@ -115,8 +115,7 @@ int menurep(){
 			
 		case 4:
 		system("cls");
-		main();
-		break;
+		return;
 	
 	   	default:
     	system("cls");
@@ -189,8 +188,7 @@ int menucnb(){
 		
 		case 4:
 		system("cls");
-		main();
-		break;
+		return;
 	
 		default:
     	system("cls");
@@ -268,8 +266,7 @@ int menuw(){
 		
 		case 4:
 		system("cls");
-		main();
-		break;
+		return;
 		
 		default:
     	system("cls");
@@ -493,8 +490,8 @@ void jogorep(){
 	scanf(" %c", &opcao5);
 	
 	
-	switch(opcao5)
-		{
+	switch(opcao5){
+	
 	case 'b':
 	case 'B':
 		ACE += 1;	
@@ -574,55 +571,286 @@ void jogocnb(){
 	
 }
 
-// variaveis so pra deixar organizado	
+// variaveis so pra deixar organizado, eu poderia colocar la encima, mas aqui fica mais facil de ver kkkk	
 	
-	int eqp1_c2_furia;
-	int eqp1_c1_furia;
-	int eqp2_c1_furia;
-	int eqp2_c2_furia;
+	int daruk_furia = 1;
+	int mipha_furia = 1;
+	int revali_furia = 1;
+	int urbosa_furia = 1;
 		
-	int eqp1_c1_ativo;
-	int eqp1_c2_ativo;
-	int eqp2_c1_ativo;
-	int eqp2_c2_ativo;
+	int daruk_ativo = 1;
+	int mipha_ativo = 1;
+	int revali_ativo = 1;
+	int urbosa_ativo = 1;
 	
 	void jogow() {
 	
-	    int opcao;
-	
-	    while (1) {
-	
-	        system("cls");
-	
-	        printf("+--------------------------------------------+\n");
-	        printf("¦          A GUERRA COMECA AGORA!           ¦\n");
-	        printf("+--------------------------------------------+\n\n");
-	
-	        printf("        ----CAMPEOES EM COMBATE----\n\n");
-	
-	        printf("+-----------------------------------------------+\n");
-	        printf("¦       JOGADOR 1       ¦       JOGADOR 2       ¦\n");
-	        printf("¦-----------------------+-----------------------¦\n");
-	
-	        printf("¦ DARUK (1)             ¦ REVALI (1)            ¦\n");
-	        printf("¦ Furia: %-3d            ¦ Furia: %-3d            ¦\n", eqp1_c1_furia, eqp2_c1_furia);
-	
-	        printf("¦ MIPHA (2)             ¦ URBOSA (2)            ¦\n");
-	        printf("¦ Furia: %-3d            ¦ Furia: %-3d            ¦\n", eqp1_c2_furia, eqp2_c2_furia);
-	
-	        printf("+-----------------------------------------------+\n\n");
-	
-	        printf("1 - Atacar\n2 - Dividir\n3 - Sair\n");
-	        printf("Escolha: ");
-	        scanf("%d", &opcao);
-	
-  	
-	    }
-	}
+    int turno = 1;
+    int opcao;
 
+    while (1) {
 
+        system("cls");
 
+        printf("+--------------------------------------------+\n");
+        printf("|          A GUERRA COMECA AGORA!           |\n");
+        printf("+--------------------------------------------+\n\n");
 
+        printf("        ----CAMPEOES EM COMBATE----\n\n");
+
+        printf("+-----------------------------------------------+\n");
+        printf("|       JOGADOR 1       |       JOGADOR 2       |\n");
+        printf("|-----------------------+-----------------------|\n");
+
+        printf("| DARUK (1)             | REVALI (1)            |\n");
+
+        if (daruk_ativo)
+            printf("| Furia: %-3d            ", daruk_furia);
+        else
+            printf("| Furia: %-3d [X]        ", daruk_furia);
+
+        if (revali_ativo)
+            printf("| Furia: %-3d            |\n", revali_furia);
+        else
+            printf("| Furia: %-3d [X]        |\n", revali_furia);
+
+        printf("| MIPHA (2)             | URBOSA (2)            |\n");
+
+        if (mipha_ativo)
+            printf("| Furia: %-3d            ", mipha_furia);
+        else
+            printf("| Furia: %-3d [X]        ", mipha_furia);
+
+        if (urbosa_ativo)
+            printf("| Furia: %-3d            |\n", urbosa_furia);
+        else
+            printf("| Furia: %-3d [X]        |\n", urbosa_furia);
+
+        printf("+-----------------------------------------------+\n\n");
+
+        printf("Turno do Jogador %d\n\n", turno);
+
+        printf("Escolha sua acao:\n");
+        printf("1 - Atacar\n");
+        printf("2 - Dividir\n");
+        printf("3 - Sair\n");
+        printf("\nFaca sua escolha: ");
+
+        if (scanf("%d", &opcao) != 1) {
+            system("cls");
+            printf("Opcao invalida!\n\n");
+            printf("PRESSIONE ENTER PARA VOLTAR A BATALHA...");
+            while (getchar() != '\n');
+            getchar();
+            continue;
+        }
+
+        switch (opcao) {
+
+            case 3:
+			system("cls");
+    		daruk_furia = 1;
+    		mipha_furia = 1;
+    		revali_furia = 1;
+    		urbosa_furia = 1;
+    		daruk_ativo = 1;
+    		mipha_ativo = 1;
+ 			revali_ativo = 1;
+    		urbosa_ativo = 1;
+    		turno = 1;
+			return;
+
+            //parte do ataque pra nao se perder malco
+            
+            case 1: {
+
+                int atk, alvo;
+
+                printf("\nEscolha quem vai atacar (1 ou 2): ");
+                if (scanf("%d", &atk) != 1) {
+                    system("cls");
+                    printf("Opcao invalida!\n\n");
+                    printf("PRESSIONE ENTER PARA VOLTAR A BATALHA...");
+                    while (getchar() != '\n');
+                    getchar();
+                    continue;
+                }
+
+                printf("Escolha o alvo (1 ou 2): ");
+                if (scanf("%d", &alvo) != 1) {
+                    system("cls");
+                    printf("Opcao invalida!\n\n");
+                    printf("PRESSIONE ENTER PARA VOLTAR A BATALHA...");
+                    while (getchar() != '\n');
+                    getchar();
+                    continue;
+                }
+
+                if (turno == 1) {
+
+                    if (atk == 1 && alvo == 1 && daruk_ativo && revali_ativo)
+                        revali_furia += daruk_furia;
+
+                    else if (atk == 1 && alvo == 2 && daruk_ativo && urbosa_ativo)
+                        urbosa_furia += daruk_furia;
+
+                    else if (atk == 2 && alvo == 1 && mipha_ativo && revali_ativo)
+                        revali_furia += mipha_furia;
+
+                    else if (atk == 2 && alvo == 2 && mipha_ativo && urbosa_ativo)
+                        urbosa_furia += mipha_furia;
+
+                    else continue;
+
+                } else {
+
+                    if (atk == 1 && alvo == 1 && revali_ativo && daruk_ativo)
+                        daruk_furia += revali_furia;
+
+                    else if (atk == 1 && alvo == 2 && revali_ativo && mipha_ativo)
+                        mipha_furia += revali_furia;
+
+                    else if (atk == 2 && alvo == 1 && urbosa_ativo && daruk_ativo)
+                        daruk_furia += urbosa_furia;
+
+                    else if (atk == 2 && alvo == 2 && urbosa_ativo && mipha_ativo)
+                        mipha_furia += urbosa_furia;
+
+                    else continue;
+                }
+
+                break;
+            }
+
+            //parte da divisao pra nao se perder malco parte 2
+            
+            case 2: {
+
+                int origem, valor;
+
+                printf("\nQuem vai dividir? (1 ou 2): ");
+                if (scanf("%d", &origem) != 1) {
+                    system("cls");
+                    printf("Opcao invalida!\n\n");
+                    printf("PRESSIONE ENTER PARA VOLTAR A BATALHA...");
+                    while (getchar() != '\n');
+                    getchar();
+                    continue;
+                }
+
+                printf("Quanto transferir: ");
+                if (scanf("%d", &valor) != 1) {
+                    system("cls");
+                    printf("Opcao invalida!\n\n");
+                    printf("PRESSIONE ENTER PARA VOLTAR A BATALHA...");
+                    while (getchar() != '\n');
+                    getchar();
+                    continue;
+                }
+
+                if (valor < 1) continue;
+
+                if (turno == 1) {
+
+                    if (origem == 1 && daruk_ativo && daruk_furia % 2 == 0 &&
+                        daruk_furia > valor && mipha_furia + valor <= 5) {
+
+                        daruk_furia -= valor;
+                        mipha_furia += valor;
+                        mipha_ativo = 1;
+                    }
+
+                    else if (origem == 2 && mipha_ativo && mipha_furia % 2 == 0 &&
+                             mipha_furia > valor && daruk_furia + valor <= 5) {
+
+                        mipha_furia -= valor;
+                        daruk_furia += valor;
+                        daruk_ativo = 1;
+                    }
+
+                    else continue;
+
+                } else {
+
+                    if (origem == 1 && revali_ativo && revali_furia % 2 == 0 &&
+                        revali_furia > valor && urbosa_furia + valor <= 5) {
+
+                        revali_furia -= valor;
+                        urbosa_furia += valor;
+                        urbosa_ativo = 1;
+                    }
+
+                    else if (origem == 2 && urbosa_ativo && urbosa_furia % 2 == 0 &&
+                             urbosa_furia > valor && revali_furia + valor <= 5) {
+
+                        urbosa_furia -= valor;
+                        revali_furia += valor;
+                        revali_ativo = 1;
+                    }
+
+                    else continue;
+                }
+
+                break;
+            }
+
+            default:
+                continue;
+        }
+
+        //condicao pro campeao morrer pra nao se perder malco parte 3
+        
+        if (daruk_furia > 5) { daruk_furia = 0; daruk_ativo = 0; }
+        if (mipha_furia > 5) { mipha_furia = 0; mipha_ativo = 0; }
+        if (revali_furia > 5) { revali_furia = 0; revali_ativo = 0; }
+        if (urbosa_furia > 5) { urbosa_furia = 0; urbosa_ativo = 0; }
+
+        //tela de vitoria pra nao se perder malco parte 4
+        	
+        if (!daruk_ativo && !mipha_ativo) {
+            system("cls");
+			printf("\nVITORIA DO JOGADOR 2!!!!!\n");
+            printf("\nPressione ENTER para sair...");
+            getchar();
+            getchar();
+   			daruk_furia = 1;
+    		mipha_furia = 1;
+    		revali_furia = 1;
+    		urbosa_furia = 1;
+    		daruk_ativo = 1;
+    		mipha_ativo = 1;
+    		revali_ativo = 1;
+    		urbosa_ativo = 1;
+    		turno = 1;
+			system("cls");
+			break;
+        }
+
+        if (!revali_ativo && !urbosa_ativo) {
+            system("cls");
+			printf("\nVITORIA DO JOGADOR 1!!!!!\n");
+            printf("\nPressione ENTER para sair...");
+            getchar();
+            getchar();
+			daruk_furia = 1;
+    		mipha_furia = 1;
+    		revali_furia = 1;
+    		urbosa_furia = 1;
+    		daruk_ativo = 1;
+    		mipha_ativo = 1;
+    		revali_ativo = 1;
+    		urbosa_ativo = 1;
+    		turno = 1;
+			system("cls");
+			break;
+        }
+
+        if (turno == 1)
+            turno = 2;
+        else
+            turno = 1;
+    }
+}
 
 
 
