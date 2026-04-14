@@ -559,16 +559,196 @@ void jogorep(){
 }
 	}
 
-void jogocnb(){
+void jogocnb() {
+// uso de I.A na ACSII ART
+    printf("           /^\\/^\\\n");
+    printf("         _|__|  O|\n");
+    printf("\\/     /~     \\_/ \\\n");
+    printf(" \\____|__________/  \\\n");
+    printf("        \\_______      \\\n");
+    printf("                `\\     \\                 \\\n");
+    printf("                  |     |                  \\\n");
+    printf("                 /      /                    \\\n");
+    printf("                /     /                       \\\n");
+    printf("              /      /                         \\ \\\ n");
+    printf("             /     /                            \\  \\\n");
+    printf("           /     /             _----_            \\   \\\n");
+    printf("          /     /           _-~      ~-_         |   |\n");
+    printf("         (      (        _-~    _--_    ~-_     _/   |\n");
+    printf("          \\      ~-____-~    _-~    ~-_    ~-_-~    /\n");
+    printf("            ~-_           _-~          ~-_       _-~\n");
+    printf("               ~--______-~                ~-___-~\n\n\n");
+
+    printf("¦¦¦¦¦¦¦¦+¦¦¦¦¦¦¦+¦¦¦+   ¦¦¦+    ¦¦+   ¦¦+¦¦¦+   ¦¦¦+ ¦¦¦¦¦+ \n");
+    printf("+--¦¦+--+¦¦+----+¦¦¦¦+ ¦¦¦¦¦    ¦¦¦   ¦¦¦¦¦¦¦+ ¦¦¦¦¦¦¦+--¦¦+\n");
+    printf("   ¦¦¦   ¦¦¦¦¦+  ¦¦+¦¦¦¦+¦¦¦    ¦¦¦   ¦¦¦¦¦+¦¦¦¦+¦¦¦¦¦¦¦¦¦¦¦\n");
+    printf("   ¦¦¦   ¦¦+--+  ¦¦¦+¦¦++¦¦¦    ¦¦¦   ¦¦¦¦¦¦+¦¦++¦¦¦¦¦+--¦¦¦\n");
+    printf("   ¦¦¦   ¦¦¦¦¦¦¦+¦¦¦ +-+ ¦¦¦    +¦¦¦¦¦¦++¦¦¦ +-+ ¦¦¦¦¦¦  ¦¦¦\n");
+    printf("   +-+   +------++-+     +-+     +-----+ +-+     +-++-+  +-+\n\n");
+
+    printf(" ¦¦¦¦¦¦+ ¦¦¦¦¦¦+ ¦¦¦¦¦¦+ ¦¦¦¦¦¦+  ¦¦¦¦¦+ \n");
+    printf("¦¦+----+¦¦+---¦¦+¦¦+--¦¦+¦¦+--¦¦+¦¦+--¦¦+\n");
+    printf("¦¦¦     ¦¦¦   ¦¦¦¦¦¦¦¦¦++¦¦¦¦¦¦++¦¦¦¦¦¦¦¦\n");
+    printf("¦¦¦     ¦¦¦   ¦¦¦¦¦+--¦¦+¦¦+--¦¦+¦¦+--¦¦¦\n");
+    printf("+¦¦¦¦¦¦++¦¦¦¦¦¦++¦¦¦¦¦¦++¦¦¦  ¦¦¦¦¦¦  ¦¦¦\n");
+    printf(" +-----+ +-----+ +-----+ +-+  +-++-+  +-+\n\n");
+
+    printf("¦¦¦+   ¦¦+ ¦¦¦¦¦+     ¦¦¦+   ¦¦¦+¦¦+¦¦¦+   ¦¦+¦¦+  ¦¦+ ¦¦¦¦¦+ \n");
+    printf("¦¦¦¦+  ¦¦¦¦¦+--¦¦+    ¦¦¦¦+ ¦¦¦¦¦¦¦¦¦¦¦¦+  ¦¦¦¦¦¦  ¦¦¦¦¦+--¦¦+\n");
+    printf("¦¦+¦¦+ ¦¦¦¦¦¦¦¦¦¦¦    ¦¦+¦¦¦¦+¦¦¦¦¦¦¦¦+¦¦+ ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦\n");
+    printf("¦¦¦+¦¦+¦¦¦¦¦+--¦¦¦    ¦¦¦+¦¦++¦¦¦¦¦¦¦¦¦+¦¦+¦¦¦¦¦+--¦¦¦¦¦+--¦¦¦\n");
+    printf("¦¦¦ +¦¦¦¦¦¦¦¦  ¦¦¦    ¦¦¦ +-+ ¦¦¦¦¦¦¦¦¦ +¦¦¦¦¦¦¦¦  ¦¦¦¦¦¦  ¦¦¦\n");
+    printf("+-+  +---++-+  +-+    +-+     +-++-++-+  +---++-+  +-++-+  +-+\n\n");
+
+    printf("¦¦¦¦¦¦+  ¦¦¦¦¦¦+ ¦¦¦¦¦¦¦¦+ ¦¦¦¦¦+ \n");
+    printf("¦¦+--¦¦+¦¦+---¦¦++--¦¦+--+¦¦+--¦¦+\n");
+    printf("¦¦¦¦¦¦++¦¦¦   ¦¦¦   ¦¦¦   ¦¦¦¦¦¦¦¦\n");
+    printf("¦¦+--¦¦+¦¦¦   ¦¦¦   ¦¦¦   ¦¦+--¦¦¦\n");
+    printf("¦¦¦¦¦¦+++¦¦¦¦¦¦++   ¦¦¦   ¦¦¦  ¦¦¦\n");
+    printf("+-----+  +-----+    +-+   +-+  +-+\n");
+
+	printf("\n\nbem vindo ao CNB!\n\n");
+	system("pause");
+	getchar();
+	system("cls");
 	
-	//jogo 2
+	char escolha1, escolha2;
 	
-	printf("teste");
+	do {
 	
+	system("cls");
+	printf("PLAYER 1 - Escolha seu personagem:\n");
+	printf("\nA) WOODY\nB) BUZZ\nC) SLINKY\nD) BETTY\nE) REX\nF) KILLIAN\nG) VAL\n\n");
+	printf("Sua escolha: ");
+	scanf(" %c", &escolha1);
+	escolha1 = toupper(escolha1);
 	
+	} 
 	
+	while(escolha1 != 'A' && escolha1 != 'B' &&
+           	    escolha1 != 'C' && escolha1 != 'D' &&
+			    escolha1 != 'E' && escolha1 != 'F' &&
+           	    escolha1 != 'G');
+    do{ 
 	
+	system("cls");
+	printf("PLAYER 2 - Escolha seu personagem:\n");
+	printf("\nA) WOODY\nB) BUZZ\nC) SLINKY\nD) BETTY\nE) REX\nF) KILLIAN\nG) VAL\n\n");
+	printf("Sua escolha: ");
+	scanf(" %c", &escolha2);
+	escolha2 = toupper(escolha2);
+	} 
+	while((escolha2 != 'A' && escolha2 != 'B' &&
+  	   	   	    escolha2 != 'C' && escolha2 != 'D' &&
+				escolha2 != 'E' && escolha2 != 'F' &&
+           	    escolha2 != 'G')|| escolha2 == escolha1);
+					  	
+	system("cls");
+   				 	  
+	srand(time(NULL));
+	int sorteio = rand()%2;
+	int c1=0, c2=0, c3=0, c4=0, c5=0;			
+	int botao = rand()%5 + 1;
+	int cobra;   	      	   
+	int escolha;			
 	
+	do{
+		cobra = rand()%5 + 1;
+	}
+	
+	while(cobra == botao);	
+				
+	while(1) {
+        
+	printf("\nCaixas: ");
+	if(c1) printf("[X] "); else printf("[1] ");
+	if(c2) printf("[X] "); else printf("[2] ");
+	if(c3) printf("[X] "); else printf("[3] ");
+	if(c4) printf("[X] "); else printf("[4] ");
+	if(c5) printf("[X] "); else printf("[5] ");
+
+	printf("\n");
+
+    if(sorteio == 0) {
+            
+			printf("\nVez do jogador 1 ");
+        
+		}
+    else {
+            
+			printf("\nVez do jogador 2 ");
+			
+        }
+					
+		printf("Escolha uma caixa entre(1-5): ");
+        if (scanf("%d", &escolha) != 1) {
+            
+			system("cls");
+    		printf("Opcao invalida! Por favor escolha uma opcao entre 1 - 5.\n\n");
+    		printf("Pressione ENTER para retornar ao menu do jogo...");
+    		while (getchar() != '\n');
+    		getchar();                
+    		system("cls");
+        }	
+						
+		if(escolha==1 && c1==1) {
+            printf("? Caixa já aberta!\n");
+            continue;
+        }
+        if(escolha==2 && c2==1) {
+            printf("? Caixa já aberta!\n");
+            continue;
+        }
+        if(escolha==3 && c3==1) {
+            printf("? Caixa já aberta!\n");
+            continue;
+        }
+        if(escolha==4 && c4==1) {
+            printf("? Caixa já aberta!\n");
+            continue;
+        }
+        if(escolha==5 && c5==1) {
+            printf("? Caixa já aberta!\n");
+            continue;
+        }	
+					
+		if(escolha==1) c1 = 1;
+        if(escolha==2) c2 = 1;
+        if(escolha==3) c3 = 1;
+        if(escolha==4) c4 = 1;
+        if(escolha==5) c5 = 1;
+				
+		if(escolha == botao) {
+    if(sorteio == 0){
+        system("cls");
+        printf("\nVITORIA DO JOGADOR 1\n");
+    } else {
+        system("cls");
+        printf("\nVITORIA DO JOGADOR 2\n");
+    }
+    printf("\nPressione ENTER para sair...");
+    getchar();
+    getchar();
+    break;
+}
+				
+        if(escolha == cobra) {
+    if(sorteio == 0){
+        system("cls");
+        printf("\nDERROTA DO JOGADOR 1\n");
+    } else {
+        system("cls");
+        printf("\nDERROTA DO JOGADOR 2\n");
+    }
+    printf("\nPressione ENTER para sair...");
+    getchar();
+    getchar();
+    break;
+}
+    printf("\nCaixa vazia...\n");
+    sorteio = !sorteio;
+				}		
+												
 }
 
 // variaveis so pra deixar organizado, eu poderia colocar la encima, mas aqui fica mais facil de ver kkkk	
@@ -851,44 +1031,3 @@ void jogocnb(){
             turno = 1;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
