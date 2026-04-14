@@ -20,3 +20,6 @@ DATA (14/04/2026) 2:25 AM
 
 -CODIGO COMPLETO
 +IA foi utilizada para boa parte dos jogos 2 e 3 porem nao por completo.
+
+
+ALUNOS: MALCO DOS SANTOS GUERREIRO, SALIM FRAIHA BRAGA.
