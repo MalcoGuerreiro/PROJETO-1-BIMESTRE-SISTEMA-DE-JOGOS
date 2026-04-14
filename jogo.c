@@ -5,6 +5,13 @@
 #include <locale.h>
 #include <windows.h>
 
+int menurep();
+int menucnb();
+int menuw();
+void jogorep();
+void jogocnb();
+void jogow();
+
 int main()
 {
 setlocale(LC_ALL,"portuguese");	
@@ -95,7 +102,6 @@ int menurep(){
 		getchar();
 		getchar();
 		system("cls");
-		menurep();
 		break;
 		
 		case 3:
@@ -107,15 +113,14 @@ int menurep(){
     	printf("O silencio ecoa e os cartoes brilham agressivamente.\n");
     	printf("\"Tempo esgotado!\" Caine ri. \"Nao importa, o jogo so esta comecando!\"\n");
 		printf("\nPressione ENTER para retornar ao menu do jogo...");
-		getchar();
+		while (getchar() != '\n');
 		getchar();
 		system("cls");
-		menurep();
 		break;	
 			
 		case 4:
 		system("cls");
-		return;
+		return 0;
 	
 	   	default:
     	system("cls");
@@ -169,7 +174,6 @@ int menucnb(){
 		getchar();
 		getchar();
 		system("cls");
-		menucnb();
 		break;
 
 		case 3:
@@ -183,8 +187,8 @@ int menucnb(){
 		printf("\nPressione ENTER para retornar ao menu do jogo...");
 		getchar();
 		getchar();
-		system("cls");
-		menucnb();    	   	
+		system("cls");    	   	
+		break;
 		
 		case 4:
 		system("cls");
@@ -244,7 +248,6 @@ int menuw(){
 		getchar();
 		getchar();
 		system("cls");
-		menuw();
 		break;
 		
 		case 3:
@@ -258,10 +261,10 @@ int menuw(){
 		printf("ele sera consumido pelo poder que jurou proteger.\n");
 		printf("Equilibre sua forca ou destrua seus antigos aliados!\n");
 		printf("\nPressione ENTER para retornar ao menu do jogo...");
-		getchar();
+		while (getchar() != '\n');
 		getchar();
 		system("cls");
-		menurep();
+		system("cls");
 		break;	
 		
 		case 4:
@@ -540,23 +543,28 @@ void jogorep(){
     	printf("\n");
     
     	printf("\n\nnúmero de acertos: !?!??!?!??!?!?!?\n\n\n");
-	}	else{
-		printf("seus acertos: %d/5\n\n\n", ACE);
-	}
-	
+		printf("\nPressione ENTER para continuar...");
+    	getchar();
+    	getchar();    	
+	}	
+		
+	do{
+	system("cls");
+	printf("seus acertos: %d/5\n\n\n", ACE);
 	printf("deseja jogar novamente? (S/N)");
 	SN = _getch();
 	switch(SN)
 	{
 	case 's':
-	system("cls");
-	jogorep();	
-	break;
+    system("cls");
+    jogorep();
+    break;
 	case 'n':
-	system("cls");
-	main();
-	break;
-}
+    system("cls");
+    main();
+    break;}
+	}while (SN != 's' && SN != 'S' &&
+        SN != 'n' && SN != 'N'   );
 	}
 
 void jogocnb() {
